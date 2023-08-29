@@ -32,11 +32,9 @@ a:visited {
   font-size: 25px;
   border-radius: 15px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
-  );
+  background: linear-gradient(92.49deg,
+      rgba(255, 255, 255, 0.1) 0.18%,
+      rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
@@ -72,7 +70,7 @@ a:visited {
 }
 
 #result {
-  position: fixed;
+  position: relative;
   left: 10%;
   transform: translate(-50%, -50%);
   margin: 15% auto;
@@ -95,7 +93,7 @@ a:visited {
   font-size: 1rem;
 }
 
-#result > button {
+#result>button {
   margin: 2rem auto;
 }
 
@@ -179,11 +177,9 @@ button {
   color: white;
   border-radius: 15px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
-  );
+  background: linear-gradient(92.49deg,
+      rgba(255, 255, 255, 0.1) 0.18%,
+      rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
@@ -194,17 +190,17 @@ button {
 
 #modal-background {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
-  );
+  background: linear-gradient(92.49deg,
+      rgba(255, 255, 255, 0.1) 0.18%,
+      rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
 }
+
+@media only screen and (max-width: 700px) {}
 
 #blogBtn {
   padding: 10px 20px;

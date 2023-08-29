@@ -25,8 +25,6 @@ function displayHistory() {
   histories.innerHTML = "";
   const previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
 
-  //previousTests.forEach((test) => {
-
   //Sorted the Array of Results Reversely
   //to display the latest text result first
   previousTests.reverse().forEach((test) => {
@@ -40,13 +38,11 @@ function displayHistory() {
   <h3>${test.questionText}</h3>
   <p>You took: <span class="bold">${parseInt(test.timeTaken)}</span> seconds</p>
   <p>Typing Speed (WPM)</p>
-  <p> <span class="bold">${
-    resultWPM ? resultWPM.toString() + " WPM" : "No data found"
-  }</span></p>
+  <p> <span class="bold">${resultWPM ? resultWPM.toString() + " WPM" : "No data found"
+      }</span></p>
   <p>Typing Speed (CPM)</p>
-  <p> <span class="bold">${
-    resultCPM ? resultCPM.toString() + " CPM" : "No data found"
-  }</span></p>
+  <p> <span class="bold">${resultCPM ? resultCPM.toString() + " CPM" : "No data found"
+      }</span></p>
   <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
   `;
 
