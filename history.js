@@ -36,14 +36,14 @@ function displayHistory() {
 
     newRow.innerHTML = `
   <h3>${test.questionText}</h3>
-  <p>You took: <span class="bold">${parseInt(test.timeTaken)}</span> seconds</p>
-  <p>Typing Speed (WPM)</p>
-  <p> <span class="bold">${resultWPM ? resultWPM.toString() + " WPM" : "No data found"
+  <div class = "history-Align">
+      <p>You took: <span class="bold">${parseInt(test.timeTaken)}</span> seconds</p>
+      <p>Typing Speed (WPM) <span class="bold">${resultWPM ? resultWPM.toString() + " WPM" : "No data found"
       }</span></p>
-  <p>Typing Speed (CPM)</p>
-  <p> <span class="bold">${resultCPM ? resultCPM.toString() + " CPM" : "No data found"
+      <p>Typing Speed (CPM) <span class="bold">${resultCPM ? resultCPM.toString() + " CPM" : "No data found"
       }</span></p>
-  <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+      <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+  </div>
   `;
 
     histories.appendChild(newRow);
