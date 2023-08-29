@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Speed Typer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class=" bg-slate-100 font-common">
+    <header class="h-16 flex items-center shadow-sm">
+
+    </header>
+    <main class="grid justify-items-center container mx-auto">
+        <section>
+            <h1 class="underline underline-offset-1 text-5xl m-8 font-semibold text-cyan-700">Welcome to the Blog</h1>
+        </section>
+        <section class="text-justify m-7 text-2xl">
+            <ol>
+                <li class="my-5">
+                    <h3 class="text-violet-500 font-medium">1. What is the difference between map, forEach, filter and
+                        find?</h3>
+                    <br>
+                    <p class="text-xl">
+                        <span class="underline decoration-double">map:</span> Transforms each element of an array and
+                        returns a new array with the same
+                        length. <br>
+                        <span class="underline decoration-double">forEach:</span> Executes a provided function on each
+                        array element, but doesn't modify the
+                        array or
+                        return a new one. <br>
+                        <span class="underline decoration-double">filter:</span> Creates a new array containing elements
+                        that pass a provided condition.
+                        <br>
+                        <span class="underline decoration-double">find:</span> Returns the first array element that
+                        satisfies a condition, or undefined if
+                        none do.
+                    </p>
+                </li>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">2. What is the difference between local storage & session
+                        storage?
+                    </h3>
+                    <br>
+                    <p class="text-xl">
+                        <span class="underline decoration-double">Local Storage:</span> It's a web storage mechanism
+                        that allows websites to store data as
+                        key-value
+                        pairs in a user's web browser. The data persists even after the browser is closed and can be
+                        accessed on subsequent visits to the same website. Local storage provides more storage space
+                        compared to cookies but is limited to the specific domain. <br>
+
+                        <span class="underline decoration-double">Session Storage:</span> Similar to local storage,
+                        session storage also stores data as
+                        key-value pairs
+                        in a user's browser. However, the data is only available for the duration of the browser
+                        session. Once the user closes the browser or tab, the session storage data is cleared. <br>
+
+                        All three mechanisms are used for client-side data storage but serve different purposes and have
+                        varying capabilities and limitations.
+                    </p>
+                </li>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">3. How Eventloop works in Javascript/ES6?</h3>
+                    <br>
+                    <p class="text-xl">
+                        The event loop in JavaScript manages the order of execution for asynchronous tasks. It maintains
+                        a call stack for function execution, a callback queue for completed tasks, and utilizes
+                        microtasks (like promises) to prioritize certain tasks. This enables non-blocking behavior,
+                        efficient handling of I/O operations, and ensures responsive web applications.
+                    </p>
+                </li>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">4.What is the difference between global scope and block
+                        scope?</h3>
+                    <br>
+                    <p class="text-xl"> Global scope refers to the accessibility of variables throughout the entire
+                        program, while block scope pertains to variables confined within a specific code block, like a
+                        function or loop. Global variables can be accessed and modified from anywhere, potentially
+                        causing unintended issues. In contrast, block-scoped variables are limited to the block where
+                        they're declared, enhancing code organization and reducing naming conflicts. This distinction is
+                        crucial for maintaining code clarity and preventing unintentional variable interactions.
+
+                    </p>
+                </li>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">5. How to get undefined in JavaScript?</h3>
+                    <br>
+                    <p class="text-xl">
+                        In JavaScript, you can encounter the value undefined in various situations:
+                        - When a variable is declared but not assigned a value.
+                        - When a function doesn't have a return statement or returns without a value.
+                        - When accessing a nonexistent property of an object.
+                        - When accessing an out-of-bounds index in an array.
+                        - By using the void operator followed by an expression, e.g., void 0.
+
+                        To intentionally get undefined, leave a variable uninitialized or use the void operator. It's
+                        essential to handle undefined appropriately to prevent unexpected behavior in your code.
+
+                    </p>
+                </li>
+
+            </ol>
+        </section>
+    </main>
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Speed Typer All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+</body>
+
+</html>
