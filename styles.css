@@ -204,7 +204,23 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {}
+@media only screen and (max-width: 768px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  #histories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+}
 
 #blogBtn {
   padding: 10px 20px;
